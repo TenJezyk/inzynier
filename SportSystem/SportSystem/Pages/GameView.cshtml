@@ -1,0 +1,76 @@
+﻿@page "/GameView"
+@model GameViewModel
+
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .game-table-container {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .game-table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+        .game-table th, .game-table td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .game-table th {
+            background-color: #aed4fb;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid #aed4fb;
+        }
+
+        .game-table td {
+            background-color: #ffffff;
+            border-bottom: 1px solid #f2f2f2;
+        }
+
+        .game-table tr:hover {
+            background-color: #f2f2f2;
+        }
+</style>
+
+<div class="game-table-container">
+    <table class="game-table">
+        <thead>
+            <tr>
+                <th>Gospodarze</th>
+                <th>Goście</th>
+                <th>Wynik</th>
+                <th>Dzień</th>
+                <th>Lokalizacja</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var game in Model.Games)
+            {
+                <tr>
+                    <td>@game.HostTeam.Name</td>
+                    <td>@game.VisitorsTeam.Name</td>
+                    <td>@game.HostTeamGoals - @game.VisitorTeamGoals</td>
+                    <td>@game.GameDate</td>
+                    <td>@game.Location.Street</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

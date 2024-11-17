@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using SportSystem.Data.Models;
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    var roleId = Guid.NewGuid();
+    roleId = new Guid("00000001-0000-0000-0000-000000000000");
+    var user = await UserManager.GetUserAsync(User);
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">Logout</a>
+            
+        </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Team</a>
+        <div class="dropdown-menu">
+            @{
+
+            }
+            @if (user.ApplicationUserRoleId == roleId)
+            {
+                <a class="dropdown-item" asp-page="/TrainerView">Trainer View</a>
+                <a class="dropdown-item" asp-page="/TeamCreator">Team Creator</a>
+            }
+            <a class="dropdown-item" asp-page="/TeamViewer">Team Viewer</a>
+            <a class="dropdown-item" asp-page="/TeamList">Team List</a>
+        </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Game</a>
+        <div class="dropdown-menu">
+            @if (user.ApplicationUserRoleId == roleId)
+            {
+                <a class="dropdown-item" asp-page="/GameCreator">Game Creator</a>
+            }
+            <a class="dropdown-item" asp-page="/GameView">Game View</a>
+            <a class="dropdown-item" asp-page="/GameList">Game List</a>
+        </div>
+    </li>
+
+
+
+    <li class="nav-item" style="margin-left: 700px; margin-right: 50px;">
+        <span class="nav-link">
+
+            Hello @user.Email
+    </li>
+
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+}

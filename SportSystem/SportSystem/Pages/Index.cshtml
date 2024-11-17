@@ -1,0 +1,164 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaloguj się i poznaj możliwości jakie Cię spotkają</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; 
+            width: 100%;
+        }
+
+        header {
+            background-color: #4682b4; 
+            color: #fff; 
+            padding: 20px;
+            text-align: center;
+            width: 100vw;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .task {
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ddd; 
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+            .task:hover {
+                transform: scale(1.1);
+            }
+
+            .task img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .task .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(70, 130, 180, 0.9); 
+                color: #fff; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .task:hover .overlay {
+                opacity: 1;
+            }
+
+            .task h3 {
+                margin: 0;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .task p {
+                margin: 15px;
+                font-weight: bold;
+            }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+            .cta a {
+                display: inline-block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #4682b4; 
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+                .cta a:hover {
+                    background-color: #5f9ea0; 
+                }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zaloguj się i poznaj możliwości jakie Cię spotkają</h1>
+    </header>
+
+    <section >
+        <div class="task" style="margin-bottom: 80px;">
+            <img src="../Pictures/mlodziez-druzyna.jpg" alt="Zadanie 1">
+            <div class="overlay">
+                <h3>Wybierz Swój Team!</h3>
+                <p>Zbuduj własną drużynę marzeń! Poznaj pasję gry ze znajomymi, tworząc wspólnie swoją niepowtarzalną ekipę.</p>
+            </div>
+        </div>
+        <div class="task" style="margin-bottom: 80px;">
+            <img src="../Pictures/druzynaprzyjaciol.jpg" alt="Zadanie 1">
+            <div class="overlay">
+                <h3>Dołącz do drużyny</h3>
+                <p>Brak pełnej drużyny do gry w piłkę nożną? Dołącz do nas! Wybierz dowolną ekipę i ciesz się pasją do sportu bez ograniczeń!</p>
+            </div>
+        </div>
+        <div class="task" style="margin-bottom: 80px;">
+            <img src="../Pictures/trener.jpg" alt="Zadanie 1">
+            <div class="overlay">
+                <h3>Badź trenerem</h3>
+                <p>Chcesz zobaczyć jak to jest być trenerem? Przy logowaniu zanacz opcje bycia trenerem. Ciesz się zabawą, zapisuj taktyki na mecz i nie tylko...!</p>
+            </div>
+        </div>
+        <div class="task" style="margin-bottom: 80px;">
+            <img src="../Pictures/wyszukiwarka.jpg" alt="Zadanie 1">
+            <div class="overlay">
+                <h3>Przeglądaj mecze</h3>
+                <p>Nie wiesz kiedy i gdzie jest dany mecz? Przyda Ci się do tego wyszukiwarka!</p>
+            </div>
+        </div>
+        <div class="task" style="margin-bottom: 80px;">
+            <img src="../Pictures/zegar.PNG" alt="Zadanie 1">
+            <div class="overlay">
+                <h3>Zdecyduj kiedy zagrasz mecz</h3>
+                <p>Masz napięty grafik? Żaden problem! To ty wybierasz kiedy i gdzie zagrasz mecz.</p>
+            </div>
+        </div>
+        <div class="task" style="margin-bottom: 80px;">
+            <img src="../Pictures/pobrane.png" alt="Zadanie 1">
+            <div class="overlay">
+                <h3>Bądź na bieżąco</h3>
+                <p>Masz swoja ulubioną drużynę lub jestes ciekawy jak twoja drużyna sobie radzi. Możesz sprawdzić liczbe rozegranych meczy lub wyniki.</p>
+            </div>
+        </div>
+       
+    </section>
+
+</body>
+</html>

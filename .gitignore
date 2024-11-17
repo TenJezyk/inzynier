@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SportSystem/.vs/SportSystem/FileContentIndex/47fb0872-0348-40b0-ae9f-5929b8521d7d.vsidx
+*.vsidx

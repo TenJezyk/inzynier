@@ -1,0 +1,74 @@
+﻿@page "/teamCreator"
+@model SportSystem.Pages.TeamCreatorModel
+
+<style>
+    .team-creator-form {
+        max-width: 400px;
+        width: 100%;
+        margin: 25px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    body {
+        background-color: #f0f8ff;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .form-label {
+        color: #4682b4;
+        font-size: 18px;
+    }
+
+    .form-control {
+        border-color: #ddd;
+        background-color: #e1ecf9;
+        color: #555;
+    }
+
+    .btn-primary {
+        background-color: #5f9ea0;
+        border-color: #5f9ea0;
+        color: #fff;
+    }
+
+    .btn-creative {
+        background-color: #4682b4;
+        border-color: #4682b4;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-creative:hover {
+            background-color: #5f9ea0;
+            border-color: #5f9ea0;
+        }
+</style>
+
+
+<form method="post" class="team-creator-form">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="TeamCreated.Name" class="form-label">Enter your team name</label>
+        <input asp-for="TeamCreated.Name" class="form-control" />
+        <span asp-validation-for="TeamCreated.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UserNames" class="form-label">Enter the players you want to play with</label>
+        <input asp-for="UserNames" class="form-control" />
+        <span asp-validation-for="UserNames" class="text-danger"></span>
+    </div>
+
+    <div class="form-group text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-creative">Create Your Team</button>
+    </div>
+</form>
+
+

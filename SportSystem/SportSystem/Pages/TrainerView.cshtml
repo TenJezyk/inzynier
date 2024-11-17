@@ -1,0 +1,141 @@
+﻿@page "/TrainerView"
+@model SportSystem.Pages.TrainerViewModel
+@{
+
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tabela Drużyn</title>
+            <style>
+                body {
+                    background-color: #f0f8ff;
+
+                }
+
+                .container {
+                    max-width: 1500px;
+                    margin: 20px;
+
+                }
+               
+                h1 {
+                    text-align: center;
+                    color: #4169e1;
+                }
+
+                table {
+                    width: 100%;
+                    margin-top: 20px;
+
+                }
+
+                th, td {
+                    padding: 15px;
+                    text-align: center;
+                    border: 1px solid #ced4da;
+                }
+
+                    th.team-header {
+                        background-color: #aed4fb;
+                        color: black;
+                        font-weight: bold;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                        font-size: 18px;
+                    }
+
+                    th.games-header {
+                        background-color: #aed4fb;
+                        color: black;
+                        font-weight: bold;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                        font-size: 18px;
+                    }
+
+                tr:nth-child(even) {
+                    background-color: #f8f9fa;
+                }
+
+                tr:nth-child(odd) {
+                    background-color: #ffffff;
+                }
+
+                .players-list {
+                    display: none;
+                }
+
+                .btn-primary {
+                    background-color: #4682b4;
+                    border-color: #4682b4;
+
+                }
+                    .btn-center {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    .btn-primary:hover {
+                        background-color: #5f9ea0;
+                        border-color: #5f9ea0;
+                    }
+            </style>
+        </head>
+        <div class="container">
+        <body>
+
+            <h1>Tabela Drużyn</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="team-header">Nazwa Drużyny</th>
+                        <th class="games-header">Zagrane Spotkania</th>
+                        <th class="team-header">Zawodnicy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var teamView in Model.TeamsView)
+                        {
+                            <tr>
+                                <td>@teamView.TeamName</td>
+                                <td>@teamView.NumberOfGamesPlayed</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-center" data-team-id="team-@teamView.TeamName" data-action="show" onclick="togglePlayersList('team-@teamView.TeamName')">Pokaż Zawodników</button>
+                                <div class="players-list" id="team-@teamView.TeamName-players">
+                                    <ul>
+                                        @foreach (var player in teamView.Players)
+                                        {
+                                            <li>@player</li>
+                                        }
+                                    </ul>
+                                    <button type="button" class="btn btn-primary btn-center" data-team-id="team-@teamView.TeamName" data-action="hide" onclick="togglePlayersList('team-@teamView.TeamName')">Cofnij</button>
+                                </div>
+                            </td>
+                            </tr>
+                        }
+                </tbody>
+            </table>
+
+            <script>
+                function togglePlayersList(teamId) {
+                    var playersList = document.getElementById(teamId + "-players");
+                    var showButton = document.querySelector(`button[data-team-id="${teamId}"][data-action="show"]`);
+                    var hideButton = document.querySelector(`button[data-team-id="${teamId}"][data-action="hide"]`);
+
+                    if (playersList.style.display === "none" || playersList.style.display === "") {
+                        playersList.style.display = "block";
+                        if (showButton) showButton.style.display = "none";
+                        if (hideButton) hideButton.style.display = "block";
+                    } else {
+                        playersList.style.display = "none";
+                        if (showButton) showButton.style.display = "block";
+                        if (hideButton) hideButton.style.display = "none";
+                    }
+                }
+            </script>
+
+        </body>
+        </div>
+        </html>
+}

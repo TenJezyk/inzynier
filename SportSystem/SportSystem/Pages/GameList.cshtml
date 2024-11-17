@@ -1,0 +1,140 @@
+﻿@page "/GameList"
+@using SportSystem.Data.Models;
+@model SportSystem.Pages.GameListModel
+
+<div class="container mt-5">
+    <div class="split">
+        <div class="topform">
+    <h2 class="text-center mb-4">Kalendarz Meczy</h2>
+
+    <form method="post" class="game-form" id="gameForm">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Location.Id" class="control-label">Location</label>
+            <select asp-for="Location.Id" asp-items="@(new SelectList(Model.AvailableLocations, "Id", "Street"))" class="form-control">
+                <option value="">Select location</option>
+            </select>
+            <span asp-validation-for="Location.Id" class="text-danger"></span>
+        </div>
+
+        <div class="form-group text-center mt-3">
+            <button type="submit" class="btn btn-primary">Find Games</button>
+        </div>
+    </form>
+        </div>
+
+    <div id="matchesList" class="datalist">
+        @if (Model.Location != null)
+        {
+            if (Model.Games != null && Model.Games.Count != 0)
+            {
+                <h3 class="text-center">Data/Mecz</h3>
+                
+                <ul class="list-group">
+                    @foreach (var game in Model.Games)
+                    {
+                        <li class="list-group-item">
+                            @{
+                                var hostTeam = game.HostTeam;
+                                var visitorTeam = game.VisitorsTeam;
+                            }
+                            @if (hostTeam != null && visitorTeam != null)
+                            {
+                                <div class="columns"><div class=" date">@game.GameDate.ToString("yyyy-MM-dd (HH:m)") </div> <div class="teams">@hostTeam.Name.ToUpper() (gospodarz) vs @visitorTeam.Name.ToUpper() (gość)</div></div>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Błąd: Brak informacji o drużynach.</span>
+                            }
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-center">Brak dostępnych meczów.</p>
+            }
+        }
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f0f8ff;
+    }
+
+    .container {
+        
+        margin: 0 auto;
+        
+    }
+    .split{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .datalist{
+        
+        flex-basis: 60%;
+        margin-top:1%;
+    }
+    .topform{
+        flex-basis: 70%;
+        margin-left: 3%;
+
+    }
+
+    .game-form {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px auto; 
+        text-align: center; 
+        max-width: 400px; 
+        
+    }
+
+    h2 {
+        color: #4169e1;
+
+    }
+    h3{
+        color: #4169e1;
+
+    }
+    .columns{
+        display: flex;
+
+
+    }
+    .date{
+        flex-basis:40%;
+
+    }
+    .teams{
+        flex-basis:80%;
+
+    }
+
+    label {
+        color: #555;
+    }
+
+    .btn-primary {
+        background-color: #4682b4;
+        border-color: #4682b4;
+    }
+
+        .btn-primary:hover {
+            background-color: #5f9ea0;
+            border-color: #5f9ea0;
+        }
+
+    .list-group-item{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    }
+</style>

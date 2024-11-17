@@ -1,0 +1,81 @@
+﻿@page
+@model SportSystem.Pages.SearchModel
+@{
+}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Wyszukiwarka</h2>
+
+    <form method="post" class="game-form">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="form-group">
+            <label class="control-label">Szukaj zawodnika</label>
+            <input class="form-control" placeholder="Podaj imię i nazwisko zawodnika" />
+        </div>
+
+        <div class="form-group text-center mt-3">
+            <button type="submit" class="btn btn-primary" id="gamecr">Szukaj</button>
+        </div>
+
+
+        <div class="form-group">
+            <label class="control-label">Szukaj Drużyny</label>
+            <input class="form-control" placeholder="Podaj nazwę zespołu" />
+        </div>
+
+        <div class="form-group text-center mt-3">
+            <button type="submit" class="btn btn-primary" id="gamecr">Szukaj</button>
+        </div>
+    </form>
+    <div class="result-container mt-5">
+        wypisane jakies dane elegancko tu bedą z wyszukiwarki pach pach pach 
+    </div>
+
+
+
+
+</div>
+
+<style>
+    body {
+        background-color: #f0f8ff;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .game-form {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: #4169e1;
+    }
+
+    label {
+        color: #555;
+    }
+
+    .result-container {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .btn-primary {
+        background-color: #4682b4;
+        border-color: #4682b4;
+    }
+
+        .btn-primary:hover {
+            background-color: #5f9ea0;
+            border-color: #5f9ea0;
+        }
+</style>

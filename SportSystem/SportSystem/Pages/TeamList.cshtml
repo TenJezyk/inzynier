@@ -1,0 +1,57 @@
+﻿@page "/TeamList"
+@model SportSystem.Pages.TeamListModel
+<div style="width: 60%; margin: 0 auto;">
+    <table class="table table-bordered table-striped" style="margin-left: 50px;">
+        <thead>
+            <tr>
+                <th class="team-header" style="width: 50%;">Drużyna</th>
+                <th class="games-header" style="width: 50%;">Zagrane Mecze</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var team in Model.Teams)
+            {
+                <tr>
+                    <td style="width: 50%;">@team.Name</td>
+                    <td style="width: 50%;">@Model.GetNumberOfGamesPlayed(team.Id)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+    }
+
+        th.team-header {
+            background-color: #aed4fb;
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+        }
+
+        th.games-header {
+            background-color: #aed4fb;
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+        }
+
+    tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+</style>

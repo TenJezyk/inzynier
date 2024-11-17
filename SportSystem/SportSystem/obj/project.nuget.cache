@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yRWBWogUEg4NtbnYMoaLKTPEfGWW5YRnjDemIfLtpMfmDnbGq0RPBX6BLYh8VRuOytM3YkH5rALKnRFr010UIA==",
+  "dgSpecHash": "LAx6w+J5Q6/4H36ObqGMXYzs2tpWliyNCHRowQ3Qw/kw37X1M7i+BPDBJGwdEdsFIZue2paWD739ZyQyGUHlnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Projekt-Sportowy\\SportSystem\\SportSystem\\SportSystem.csproj",
+  "projectFilePath": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Inżynierka\\inzynier\\SportSystem\\SportSystem\\SportSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fujitsu\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Fujitsu\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

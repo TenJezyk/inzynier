@@ -9,111 +9,111 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SportSystem
 build_property.RootNamespace = SportSystem
-build_property.ProjectDir = C:\Users\Fujitsu\Documents\GitHub\Projekt-Sportowy\SportSystem\SportSystem\
+build_property.ProjectDir = C:\Users\Fujitsu\Documents\GitHub\Inżynierka\inzynier\SportSystem\SportSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Fujitsu\Documents\GitHub\Projekt-Sportowy\SportSystem\SportSystem
+build_property.MSBuildProjectDirectory = C:\Users\Fujitsu\Documents\GitHub\Inżynierka\inzynier\SportSystem\SportSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Error.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/GameCreator.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/GameCreator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZUNyZWF0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/GameList.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/GameList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/GameView.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/GameView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Index.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Privacy.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Search.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/TeamCreator.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/TeamCreator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbUNyZWF0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/TeamCreatorTr.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/TeamCreatorTr.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbUNyZWF0b3JUci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/TeamList.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/TeamList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/TeamViewer.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/TeamViewer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbVZpZXdlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/TrainerView.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/TrainerView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhaW5lclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/UserRegistration.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/UserRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclJlZ2lzdHJhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/_ViewImports.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/_ViewStart.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fujitsu/Documents/GitHub/Projekt-Sportowy/SportSystem/SportSystem/Pages/Shared/_Layout.cshtml]
+[C:/Users/Fujitsu/Documents/GitHub/Inżynierka/inzynier/SportSystem/SportSystem/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kgwt5t5fkr

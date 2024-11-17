@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fujitsu\\Documents\\GitHub\\Projekt-Sportowy\\SportSystem\\SportSystem\\SportSystem.csproj": {}
+    "C:\\Users\\Fujitsu\\Documents\\GitHub\\Inżynierka\\inzynier\\SportSystem\\SportSystem\\SportSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fujitsu\\Documents\\GitHub\\Projekt-Sportowy\\SportSystem\\SportSystem\\SportSystem.csproj": {
+    "C:\\Users\\Fujitsu\\Documents\\GitHub\\Inżynierka\\inzynier\\SportSystem\\SportSystem\\SportSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Projekt-Sportowy\\SportSystem\\SportSystem\\SportSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Inżynierka\\inzynier\\SportSystem\\SportSystem\\SportSystem.csproj",
         "projectName": "SportSystem",
-        "projectPath": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Projekt-Sportowy\\SportSystem\\SportSystem\\SportSystem.csproj",
+        "projectPath": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Inżynierka\\inzynier\\SportSystem\\SportSystem\\SportSystem.csproj",
         "packagesPath": "C:\\Users\\Fujitsu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Projekt-Sportowy\\SportSystem\\SportSystem\\obj\\",
+        "outputPath": "C:\\Users\\Fujitsu\\Documents\\GitHub\\Inżynierka\\inzynier\\SportSystem\\SportSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
